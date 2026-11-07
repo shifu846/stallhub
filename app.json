@@ -9,26 +9,38 @@
     "userInterfaceStyle": "automatic",
     "plugins": [
       "expo-router",
-      ["expo-splash-screen", {
-        "backgroundColor": "#B8470F",
-        "image": "./assets/images/splash-icon.png",
-        "imageWidth": 120
-      }],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#B8470F",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 120
+        }
+      ],
       "expo-secure-store",
-      ["expo-image-picker", {
-        "cameraPermission": "StallHub uses your camera to photograph event posters.",
-        "photosPermission": "StallHub lets you choose a poster photo for your event.",
-        "microphonePermission": false
-      }],
-      ["expo-location", {
-        "locationWhenInUsePermission": "StallHub uses your location once to set where your event is held."
-      }],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "StallHub uses your camera to photograph event posters.",
+          "photosPermission": "StallHub lets you choose a poster photo for your event.",
+          "microphonePermission": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "StallHub uses your location once to set where your event is held."
+        }
+      ],
       "expo-notifications"
     ],
     "android": {
       "package": "pg.unitech.stallhub",
       "versionCode": 1,
-      "permissions": ["android.permission.ACCESS_COARSE_LOCATION", "android.permission.ACCESS_FINE_LOCATION"],
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
       "adaptiveIcon": {
         "backgroundColor": "#B8470F",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -36,8 +48,23 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       }
     },
-    "ios": { "bundleIdentifier": "pg.unitech.stallhub" },
-    "web": { "output": "static", "favicon": "./assets/images/favicon.png" },
-    "experiments": { "typedRoutes": true, "reactCompiler": true }
+    "ios": {
+      "bundleIdentifier": "pg.unitech.stallhub"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "2090ebc9-176d-408f-a8cf-6d10acc2769b"
+      }
+    },
+    "owner": "siune"
   }
 }
